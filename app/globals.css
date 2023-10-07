@@ -18,10 +18,33 @@
 
 body {
   color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  background: url("/cecemaru-bg.png");
+  background-color: #16171b;
+  background-size: 200px 200px;
+}
+
+input {
+  color: black;
+}
+
+.bg-cloud::before {
+  content: "";
+  background-image: url("/Cloud-background.png");
+  background-size: cover;
+
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  opacity: 0.13;
+
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.font-custom {
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue",
+    "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }

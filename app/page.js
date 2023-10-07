@@ -47,7 +47,7 @@ export default function Home() {
   return (
     <main className="h-screen flex flex-col">
       <div className="md:grid md:grid-cols-3">
-        <div className="col-span-1">
+        <div className="col-span-1 bg-indigo-950">
           <CurrentWeather
             measurement={measurement}
             setUserCity={setUserCity}
